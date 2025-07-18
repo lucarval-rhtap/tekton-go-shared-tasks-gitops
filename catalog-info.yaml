@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tekton-go-shared-tasks-gitops
+  description: This is GitOps manifest for tekton-go-shared-tasks   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=tekton-go-shared-tasks
+    backstage.io/kubernetes-id: tekton-go-shared-tasks 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: tekton-go-shared-tasks
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:tekton-go-shared-tasks
