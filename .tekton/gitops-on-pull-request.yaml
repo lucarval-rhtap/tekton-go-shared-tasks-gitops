@@ -30,6 +30,8 @@ spec:
       value: 'false'
     - name: ec-rekor-host
       value: https://rekor.sigstore.dev
+    - name: ec-tuf-mirror
+      value: https://tuf-repo-cdn.sigstore.dev
   pipelineRef:
     name: gitops-pull-request
   workspaces:
