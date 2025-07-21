@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/lucarval-rhtap/tekton-go-shared-tasks:7341a0dee98852ebcf9fbf2ac98c5a56f418c456@sha256:7f9bb123ffa438361496d34f96514bcaf4bad9e29a035e099308fa04f05c6fbb
+        - image: quay.io/lucarval-rhtap/tekton-go-shared-tasks:3f87aa25e9e5a8e3287229ac6821b814b79fb9d9@sha256:35b2c42f4134dd06182b081984befa69f8f293f9cd5985f9a9cf71461ce352bc
           name: container-image
